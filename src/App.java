@@ -24,6 +24,27 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Give a number: ");
+        int number = Integer.valueOf(scanner.nextLine());
+        int remainder = number % 2;
+        if (remainder == 0){
+            System.out.println("The number " + number + " is even.");
+        }else{
+            System.out.println("The number " + number + " is odd.");
+        }if (number % 5 == 0){
+        System.out.println("The number is divisible by 5.");
+        }else if (number % 3 == 0){
+        System.out.println("The number is divisible by 3.");
+        }if (number % 3 == 0 && number / 5 == 0){
+        System.out.println("The number is divisible by both 3 and 5.");
+        }if (number > 100 || number < 0){
+            System.out.println("Wrong number!");
+            // This was causing issues so I commented it out
+        //}else if (number % 2 || 3 || 5 || 7 != 0){
+        // System.out.println("Your number is prime");
+        }
+
+        
 
         
     }
